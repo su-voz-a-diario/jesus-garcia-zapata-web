@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Obras | Jesús García Zapata</title>
+    <meta name="description" content="Galería de obras de Jesús García Zapata. Pinturas que cuentan historias, despiertan emociones y dejan huella en el alma.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="inner-page">
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo"><a href="index.html">JGZ</a></div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="obras.html" class="active">MIS OBRAS</a></li>
+                    <li><a href="conferencias.html">CONFERENCIAS</a></li>
+                    <li><a href="historia.html">MI HISTORIA</a></li>
+                    <li><a href="tienda.html">TIENDA</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <div class="page-header">
+            <h1 class="page-title">Mis Obras</h1>
+            <p class="page-subtitle">"Pinturas que cuentan historias, despiertan emociones y dejan huella en el alma."</p>
+        </div>
+        
+        <div class="container">
+            <!-- Interfaz de filtros para la galería -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">Todas</button>
+                <button class="filter-btn" data-filter="oleo">Óleo</button>
+                <button class="filter-btn" data-filter="acrilico">Acrílico</button>
+                <button class="filter-btn" data-filter="paisaje">Paisajes</button>
+                <button class="filter-btn" data-filter="abstracto">Abstractos</button>
+            </div>
+
+            <!-- Grid de la Galería (Ejemplo de maqueta para Envira/Modula) -->
+            <div class="gallery-grid">
+                <!-- Obra 1 -->
+                <div class="gallery-item">
+                    <div class="gallery-img-container">
+                        <img src="https://images.unsplash.com/photo-1549490349-8643362247b5?q=80&w=800&auto=format&fit=crop" alt="León al acecho - Óleo sobre lienzo">
+                        <div class="gallery-hover">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3 class="gallery-item-title">León al acecho</h3>
+                        <p class="gallery-item-meta">Óleo sobre lienzo, 2023 | 120x80 cm</p>
+                        <span class="status-badge status-available">Disponible en Tienda</span>
+                    </div>
+                </div>
+
+                <!-- Obra 2 -->
+                <div class="gallery-item">
+                    <div class="gallery-img-container">
+                        <img src="https://images.unsplash.com/photo-1580136608260-4ebceb80ce82?q=80&w=800&auto=format&fit=crop" alt="Amanecer en la sierra - Acrílico">
+                        <div class="gallery-hover">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3 class="gallery-item-title">Amanecer en la sierra</h3>
+                        <p class="gallery-item-meta">Acrílico, 2022 | 100x100 cm</p>
+                        <span class="status-badge status-sold">Vendido</span>
+                    </div>
+                </div>
+                
+                <!-- Obra 3 -->
+                <div class="gallery-item">
+                    <div class="gallery-img-container">
+                        <img src="https://images.unsplash.com/photo-1563089145-599997674d42?q=80&w=800&auto=format&fit=crop" alt="Reflejos del alma - Acuarela">
+                        <div class="gallery-hover">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3 class="gallery-item-title">Reflejos del alma</h3>
+                        <p class="gallery-item-meta">Acuarela, 2024 | 50x70 cm</p>
+                        <span class="status-badge status-exhibition">En exposición</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER (Se mantiene igual que en index) -->
+    <footer class="site-footer" style="margin-top: 5rem;">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col col-brand">
+                    <div class="footer-logo">JGZ</div>
+                    <p class="footer-slogan">Jesús García Zapata.<br>Pinturas que hablan. Palabras que pintan.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Jesús García Zapata</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="inner-page">
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo"><a href="index.html">JGZ</a></div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="obras.html">MIS OBRAS</a></li>
+                    <li><a href="conferencias.html">CONFERENCIAS</a></li>
+                    <li><a href="historia.html">MI HISTORIA</a></li>
+                    <li><a href="tienda.html">TIENDA</a></li>
+                    <li><a href="contacto.html" class="active">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content container">
+        <div class="contact-grid">
+            
+            <!-- Info de Contacto -->
+            <div class="contact-info">
+                <h1 class="section-title">Hablemos</h1>
+                <p>Si deseas adquirir una obra, encargar un retrato personalizado o contratar una conferencia, no dudes en escribirme.</p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:Jzapata737@hotmail.com">Jzapata737@hotmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <a href="https://wa.me/525531175588">+52 55 3117 5588</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Estudio en México (Visitas previa cita)</span>
+                    </div>
+                </div>
+
+                <div class="contact-social">
+                    <h3 class="subsection-title">Sígueme</h3>
+                    <div class="social-icons" style="margin-top: 1rem;">
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formulario de Contacto -->
+            <div class="contact-form-container">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo *</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono (opcional)</label>
+                            <input type="tel" id="telefono" name="telefono">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="asunto">Asunto *</label>
+                        <select id="asunto" name="asunto" required>
+                            <option value="">Selecciona un asunto...</option>
+                            <option value="compra">Compra de obra</option>
+                            <option value="conferencia">Contratación de conferencia</option>
+                            <option value="encargo">Encargo personalizado</option>
+                            <option value="exposicion">Exposición / Galería</option>
+                            <option value="prensa">Prensa / Entrevista</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje *</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-submit">ENVIAR MENSAJE</button>
+                </form>
+            </div>
+            
+        </div>
+    </main>
+</body>
+</html>
