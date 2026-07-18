@@ -37,16 +37,14 @@
         <div class="container">
             <!-- Interfaz de filtros para la galería -->
             <div class="gallery-filters">
-                <button class="filter-btn active" data-filter="all">Todas</button>
-                <button class="filter-btn" data-filter="oleo">Óleo</button>
-                <button class="filter-btn" data-filter="acrilico">Acrílico</button>
-                <button class="filter-btn" data-filter="paisaje">Paisajes</button>
-                <button class="filter-btn" data-filter="abstracto">Abstractos</button>
+                <button class="filter-btn active" data-filter="all">Catálogo Completo</button>
+                <button class="filter-btn" data-filter="adquisicion">En Adquisición</button>
+                <button class="filter-btn" data-filter="historico">Archivo Histórico</button>
             </div>
 
             <!-- Grid de la Galería (Ejemplo de maqueta para Envira/Modula) -->
             <div class="gallery-grid">
-                <div class="gallery-item">
+                <div class="gallery-item" data-category="adquisicion">
                     <div class="gallery-img-container">
                         <img src="assets/images/obras/obra-jesus-garcia-zapata-01.webp" loading="lazy" alt="Obra Original 1">
                         <div class="gallery-hover">
@@ -59,7 +57,7 @@
                         <span class="status-badge status-available">Disponible</span>
                     </div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-category="historico">
                     <div class="gallery-img-container">
                         <img src="assets/images/obras/obra-jesus-garcia-zapata-02.webp" loading="lazy" alt="Obra Original 2">
                         <div class="gallery-hover">
@@ -69,10 +67,10 @@
                     <div class="gallery-info">
                         <h3 class="gallery-item-title">Obra Original #02</h3>
                         <p class="gallery-item-meta">Técnica mixta</p>
-                        <span class="status-badge status-available">Disponible</span>
+                        <span class="status-badge status-sold">Colección Privada</span>
                     </div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-category="adquisicion">
                     <div class="gallery-img-container">
                         <img src="assets/images/obras/obra-jesus-garcia-zapata-03.webp" loading="lazy" alt="Obra Original 3">
                         <div class="gallery-hover">
@@ -85,7 +83,7 @@
                         <span class="status-badge status-available">Disponible</span>
                     </div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-category="historico">
                     <div class="gallery-img-container">
                         <img src="assets/images/obras/obra-jesus-garcia-zapata-04.webp" loading="lazy" alt="Obra Original 4">
                         <div class="gallery-hover">
@@ -95,10 +93,10 @@
                     <div class="gallery-info">
                         <h3 class="gallery-item-title">Obra Original #04</h3>
                         <p class="gallery-item-meta">Técnica mixta</p>
-                        <span class="status-badge status-available">Disponible</span>
+                        <span class="status-badge status-sold">Colección Privada</span>
                     </div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-category="adquisicion">
                     <div class="gallery-img-container">
                         <img src="assets/images/obras/obra-jesus-garcia-zapata-05.webp" loading="lazy" alt="Obra Original 5">
                         <div class="gallery-hover">
@@ -111,7 +109,7 @@
                         <span class="status-badge status-available">Disponible</span>
                     </div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-category="historico">
                     <div class="gallery-img-container">
                         <img src="assets/images/obras/obra-jesus-garcia-zapata-06.webp" loading="lazy" alt="Obra Original 6">
                         <div class="gallery-hover">
@@ -121,10 +119,10 @@
                     <div class="gallery-info">
                         <h3 class="gallery-item-title">Obra Original #06</h3>
                         <p class="gallery-item-meta">Técnica mixta</p>
-                        <span class="status-badge status-available">Disponible</span>
+                        <span class="status-badge status-sold">Colección Privada</span>
                     </div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-category="adquisicion">
                     <div class="gallery-img-container">
                         <img src="assets/images/obras/obra-jesus-garcia-zapata-07.webp" loading="lazy" alt="Obra Original 7">
                         <div class="gallery-hover">
@@ -137,7 +135,7 @@
                         <span class="status-badge status-available">Disponible</span>
                     </div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-category="historico">
                     <div class="gallery-img-container">
                         <img src="assets/images/obras/obra-jesus-garcia-zapata-08.webp" loading="lazy" alt="Obra Original 8">
                         <div class="gallery-hover">
@@ -147,10 +145,10 @@
                     <div class="gallery-info">
                         <h3 class="gallery-item-title">Obra Original #08</h3>
                         <p class="gallery-item-meta">Técnica mixta</p>
-                        <span class="status-badge status-available">Disponible</span>
+                        <span class="status-badge status-sold">Colección Privada</span>
                     </div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-category="adquisicion">
                     <div class="gallery-img-container">
                         <img src="assets/images/obras/obra-jesus-garcia-zapata-09.webp" loading="lazy" alt="Obra Original 9">
                         <div class="gallery-hover">
@@ -163,7 +161,7 @@
                         <span class="status-badge status-available">Disponible</span>
                     </div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-category="historico">
                     <div class="gallery-img-container">
                         <img src="assets/images/obras/obra-jesus-garcia-zapata-10.webp" loading="lazy" alt="Obra Original 10">
                         <div class="gallery-hover">
@@ -173,10 +171,10 @@
                     <div class="gallery-info">
                         <h3 class="gallery-item-title">Obra Original #10</h3>
                         <p class="gallery-item-meta">Técnica mixta</p>
-                        <span class="status-badge status-available">Disponible</span>
+                        <span class="status-badge status-sold">Colección Privada</span>
                     </div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-category="adquisicion">
                     <div class="gallery-img-container">
                         <img src="assets/images/obras/obra-jesus-garcia-zapata-11.webp" loading="lazy" alt="Obra Original 11">
                         <div class="gallery-hover">
@@ -189,7 +187,7 @@
                         <span class="status-badge status-available">Disponible</span>
                     </div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-category="historico">
                     <div class="gallery-img-container">
                         <img src="assets/images/obras/obra-jesus-garcia-zapata-12.webp" loading="lazy" alt="Obra Original 12">
                         <div class="gallery-hover">
@@ -199,10 +197,10 @@
                     <div class="gallery-info">
                         <h3 class="gallery-item-title">Obra Original #12</h3>
                         <p class="gallery-item-meta">Técnica mixta</p>
-                        <span class="status-badge status-available">Disponible</span>
+                        <span class="status-badge status-sold">Colección Privada</span>
                     </div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-category="adquisicion">
                     <div class="gallery-img-container">
                         <img src="assets/images/obras/obra-jesus-garcia-zapata-13.webp" loading="lazy" alt="Obra Original 13">
                         <div class="gallery-hover">
@@ -215,7 +213,7 @@
                         <span class="status-badge status-available">Disponible</span>
                     </div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-category="historico">
                     <div class="gallery-img-container">
                         <img src="assets/images/obras/obra-jesus-garcia-zapata-14.webp" loading="lazy" alt="Obra Original 14">
                         <div class="gallery-hover">
@@ -225,10 +223,10 @@
                     <div class="gallery-info">
                         <h3 class="gallery-item-title">Obra Original #14</h3>
                         <p class="gallery-item-meta">Técnica mixta</p>
-                        <span class="status-badge status-available">Disponible</span>
+                        <span class="status-badge status-sold">Colección Privada</span>
                     </div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-category="adquisicion">
                     <div class="gallery-img-container">
                         <img src="assets/images/obras/obra-jesus-garcia-zapata-15.webp" loading="lazy" alt="Obra Original 15">
                         <div class="gallery-hover">
@@ -242,6 +240,12 @@
                     </div>
                 </div>
             </div>
+            
+            <section class="commissions-section" style="margin-top: 5rem; padding: 4rem 2rem; background: var(--bg-dark); border-radius: 8px; text-align: center; border: 1px solid var(--gray-medium);">
+                <h2 class="section-title">Comisiones Especiales</h2>
+                <p style="color: var(--gray-light); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6;">¿Tienes una idea en mente? Convierte tu visión, un recuerdo o un retrato en una obra de arte original pintada a tu medida por Jesús García Zapata.</p>
+                <a href="contacto.html" class="btn btn-primary">Contáctame para tu obra</a>
+            </section>
         </div>
     </main>
 
@@ -268,6 +272,28 @@
             const lightbox = document.getElementById('lightbox');
             const lightboxImg = document.getElementById('lightbox-img');
             const closeBtn = document.querySelector('.lightbox-close');
+            
+            // Filter logic
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const filterValue = btn.getAttribute('data-filter');
+
+                    galleryItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
             const galleryContainers = document.querySelectorAll('.gallery-img-container');
 
             galleryContainers.forEach(container => {
