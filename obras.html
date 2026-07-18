@@ -256,5 +256,53 @@
             </div>
         </div>
     </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox-modal">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" src="" alt="Ampliación de obra">
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const closeBtn = document.querySelector('.lightbox-close');
+            const galleryContainers = document.querySelectorAll('.gallery-img-container');
+
+            galleryContainers.forEach(container => {
+                container.style.cursor = 'pointer';
+                container.addEventListener('click', () => {
+                    const img = container.querySelector('img');
+                    if (img) {
+                        lightboxImg.src = img.src;
+                        lightboxImg.alt = img.alt;
+                        lightbox.classList.add('active');
+                        // Prevenir scroll mientras el modal está abierto
+                        document.body.style.overflow = 'hidden';
+                    }
+                });
+            });
+
+            const closeModal = () => {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            };
+
+            closeBtn.addEventListener('click', closeModal);
+
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) {
+                    closeModal();
+                }
+            });
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                    closeModal();
+                }
+            });
+        });
+    </script>
 </body>
 </html>
