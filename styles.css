@@ -200,7 +200,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     justify-content: center;
     /* Placeholder para imagen de fondo (retrato abstracto según requerimiento) */
-    background-image: url('https://images.unsplash.com/photo-1541819779344-9b2f2988cb62?q=80&w=1920&auto=format&fit=crop');
+    background-image: url('assets/images/obras/obra-jesus-garcia-zapata-11.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -351,15 +351,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card-obras {
-    background-image: url('https://images.unsplash.com/photo-1549490349-8643362247b5?q=80&w=600&auto=format&fit=crop');
+    background-image: url('assets/images/obras/obra-jesus-garcia-zapata-01.webp');
 }
 
 .card-conferencias {
-    background-image: url('https://images.unsplash.com/photo-1475721028314-390576a06141?q=80&w=600&auto=format&fit=crop');
+    background-image: url('assets/images/obras/obra-jesus-garcia-zapata-10.webp');
 }
 
 .card-quote {
-    background-image: url('https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?q=80&w=600&auto=format&fit=crop');
+    background-image: url('assets/images/obras/obra-jesus-garcia-zapata-02.webp');
     justify-content: center;
 }
 
@@ -418,7 +418,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     padding: var(--space-xl) 2rem;
     text-align: center;
-    background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1920&auto=format&fit=crop');
+    background-image: url('assets/images/obras/obra-jesus-garcia-zapata-15.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
