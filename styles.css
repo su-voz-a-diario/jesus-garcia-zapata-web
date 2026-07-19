@@ -1285,3 +1285,53 @@ h1, h2, h3, h4, h5, h6 {
 .lightbox-close:hover {
     color: var(--primary-color);
 }
+
+/* ==========================================================================
+   MENÚ MÓVIL Y AJUSTES RESPONSIVOS GLOBALES
+   ========================================================================== */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .main-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(13, 13, 13, 0.98);
+        padding: 2rem 0;
+        border-bottom: 1px solid rgba(201, 169, 110, 0.3);
+    }
+    
+    .main-nav.active {
+        display: block;
+    }
+    
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1rem;
+    }
+    
+    .topics-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .page-title {
+        font-size: 2rem;
+    }
+}
