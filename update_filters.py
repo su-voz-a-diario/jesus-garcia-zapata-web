@@ -20,7 +20,7 @@ for i in range(1, 16):
                         <h3 class="gallery-item-title">Obra Original #{i:02d}</h3>
                         <p class="gallery-item-meta">Técnica mixta</p>
                         <span class="status-badge status-available" style="margin-bottom: 0.5rem; display: inline-block;">Disponible</span>
-                        <a href="tienda.html" class="btn btn-card" style="font-size: 0.8rem; padding: 0.4rem 0.8rem; margin-top: 0.5rem; display: block;">Adquirir en Tienda</a>
+                        <a href="tienda.html" class="btn btn-card" style="font-size: 0.8rem; padding: 0.4rem 0.8rem; margin-top: 0.5rem; display: block;">Adquirir Obra</a>
                     </div>
                 </div>\n'''
 
