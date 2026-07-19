@@ -102,11 +102,58 @@
                     </div>
                     
                     <button type="submit" class="btn btn-primary btn-submit">ENVIAR MENSAJE</button>
+                    <div id="form-message" style="display: none; margin-top: 15px; padding: 15px; border-radius: 4px; text-align: center; font-weight: bold;"></div>
                 </form>
             </div>
             
         </div>
     </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.querySelector('.contact-form');
+            const messageDiv = document.getElementById('form-message');
+            const submitBtn = form.querySelector('.btn-submit');
+
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Cambiar el texto del botón mientras envía
+                const originalBtnText = submitBtn.innerText;
+                submitBtn.innerText = 'ENVIANDO...';
+                submitBtn.disabled = true;
+
+                fetch("https://formsubmit.co/ajax/Jzapata737@hotmail.com", {
+                    method: "POST",
+                    body: new FormData(form)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if(data.success) {
+                        messageDiv.style.display = 'block';
+                        messageDiv.style.backgroundColor = 'rgba(46, 204, 113, 0.2)';
+                        messageDiv.style.color = '#2ecc71';
+                        messageDiv.style.border = '1px solid #2ecc71';
+                        messageDiv.innerText = '¡Enviado! Tu mensaje ha sido recibido con éxito.';
+                        form.reset();
+                    } else {
+                        throw new Error('Error en el envío');
+                    }
+                })
+                .catch(error => {
+                    messageDiv.style.display = 'block';
+                    messageDiv.style.backgroundColor = 'rgba(231, 76, 60, 0.2)';
+                    messageDiv.style.color = '#e74c3c';
+                    messageDiv.style.border = '1px solid #e74c3c';
+                    messageDiv.innerText = 'Hubo un error al enviar el mensaje. Intenta de nuevo.';
+                })
+                .finally(() => {
+                    submitBtn.innerText = originalBtnText;
+                    submitBtn.disabled = false;
+                });
+            });
+        });
+    </script>
     <script src="mobile-menu.js"></script>
 </body>
 </html>
