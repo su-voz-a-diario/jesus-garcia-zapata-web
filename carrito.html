@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - Jesús García Zapata</title>
+    <meta name="description" content="Finaliza tu compra de arte original de Jesús García Zapata.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .cart-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        .cart-items {
+            background: var(--bg-dark);
+            border: 1px solid var(--gray-medium);
+            border-radius: 8px;
+            padding: 2rem;
+        }
+        .cart-item {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--gray-medium);
+            margin-bottom: 2rem;
+        }
+        .cart-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .cart-item-img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+        .cart-item-info {
+            flex: 1;
+        }
+        .cart-item-title {
+            font-family: var(--font-heading);
+            color: var(--accent-gold);
+            margin-bottom: 0.5rem;
+        }
+        .cart-item-remove {
+            color: var(--gray-light);
+            background: none;
+            border: none;
+            cursor: pointer;
+            text-decoration: underline;
+            margin-top: 1rem;
+        }
+        .cart-item-remove:hover {
+            color: #ff4444;
+        }
+        .cart-item-price {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+        .cart-summary {
+            background: var(--bg-dark);
+            border: 1px solid var(--accent-gold);
+            border-radius: 8px;
+            padding: 2rem;
+            height: fit-content;
+        }
+        .summary-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            color: var(--gray-light);
+        }
+        .summary-total {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--gray-medium);
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--white);
+        }
+        @media (max-width: 900px) {
+            .cart-container {
+                grid-template-columns: 1fr;
+            }
+        }
+        @media (max-width: 600px) {
+            .cart-item {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body class="inner-page">
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo"><a href="index.html">JGZ</a></div>
+            <nav class="main-nav" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="obras.html">MIS OBRAS</a></li>
+                    <li><a href="conferencias.html">CONFERENCIAS</a></li>
+                    <li><a href="historia.html">MI HISTORIA</a></li>
+                    <li><a href="tienda.html" class="active">TIENDA</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="page-content container" style="min-height: 70vh;">
+        <h1 class="section-title">Tu Carrito</h1>
+        <p style="color: var(--gray-light);">Revisa los artículos de tu carrito antes de proceder al pago seguro.</p>
+
+        <div class="cart-container">
+            <!-- Columna Izquierda: Artículos -->
+            <div class="cart-items">
+                <div class="cart-item">
+                    <img src="assets/images/obras/obra-jesus-garcia-zapata-02.webp" alt="Obra Original" class="cart-item-img">
+                    <div class="cart-item-info">
+                        <h3 class="cart-item-title">Obra Original #02</h3>
+                        <p class="cart-item-meta" style="color: var(--gray-light); font-size: 0.9rem;">Pintura única original con certificado de autenticidad AMFPA.</p>
+                        <button class="cart-item-remove"><i class="fa-solid fa-trash"></i> Eliminar del carrito</button>
+                    </div>
+                    <div class="cart-item-price">
+                        $15,000 MXN
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna Derecha: Resumen -->
+            <div class="cart-summary">
+                <h3 style="font-family: var(--font-heading); color: var(--accent-gold); margin-bottom: 2rem;">Resumen del Pedido</h3>
+                
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span>$15,000 MXN</span>
+                </div>
+                <div class="summary-row">
+                    <span>Envío Nacional Seguro</span>
+                    <span>Gratis</span>
+                </div>
+                
+                <div class="summary-total">
+                    <span>Total</span>
+                    <span>$15,000 MXN</span>
+                </div>
+                
+                <button class="btn btn-primary" style="width: 100%; margin-top: 2rem; font-size: 1.1rem; padding: 1rem;">
+                    <i class="fa-solid fa-lock"></i> Proceder al Pago Seguro
+                </button>
+                
+                <p style="text-align: center; font-size: 0.8rem; color: var(--gray-light); margin-top: 1rem;">
+                    Pago procesado de forma segura.<br>Aceptamos tarjetas de crédito, débito y PayPal.
+                </p>
+            </div>
+        </div>
+        
+        <!-- Nota para desarrollo WordPress -->
+        <div style="background: rgba(201, 169, 110, 0.1); border-left: 4px solid var(--accent-gold); padding: 1rem; margin-top: 4rem;">
+            <p style="color: var(--accent-gold); font-size: 0.9rem; margin: 0;"><strong>Nota de Desarrollo:</strong> Esta es una plantilla visual. Al integrar este sitio web con WordPress, el plugin gratuito <strong>WooCommerce</strong> generará automáticamente un carrito de compras real, calculará los costos de envío y conectará con pasarelas de pago (como Stripe o MercadoPago) para procesar cobros con tarjeta y PayPal.</p>
+        </div>
+    </main>
+
+    <!-- FOOTER (Se mantiene igual que en index) -->
+    <footer class="site-footer" style="margin-top: 5rem;">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col col-brand">
+                    <div class="footer-logo">JGZ</div>
+                    <p class="footer-slogan">Jesús García Zapata.<br>Pinturas que hablan. Palabras que pintan.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
