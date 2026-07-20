@@ -4,26 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto | Jesús García Zapata</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Contacta a Jesús García Zapata para adquirir obra original, solicitar una comisión personalizada o contratar una conferencia.">
+    <link rel="canonical" href="https://jesusgarciapintor.com/contacto.html">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/playfair-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/playfair-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contacto | Jesús García Zapata">
+    <meta property="og:description" content="Contacta a Jesús García Zapata para adquirir obra original, solicitar una comisión personalizada o contratar una conferencia.">
+    <meta property="og:url" content="https://jesusgarciapintor.com/contacto.html">
+    <meta property="og:image" content="https://jesusgarciapintor.com/assets/images/obras/obra-jesus-garcia-zapata-11.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contacto | Jesús García Zapata">
+    <meta name="twitter:description" content="Contacta a Jesús García Zapata para adquirir obra original, solicitar una comisión personalizada o contratar una conferencia.">
+    <meta name="twitter:image" content="https://jesusgarciapintor.com/assets/images/obras/obra-jesus-garcia-zapata-11.webp">
+    <link rel="stylesheet" href="styles.min.css">
 </head>
 <body class="inner-page">
     <header class="site-header">
         <div class="header-container">
-            <div class="logo"><a href="index.html">JGZ</a></div>
-            <nav class="main-nav">
+            <a class="brand" href="index.html" aria-label="JGZ Jesús García - Inicio">
+                <span class="logo" aria-hidden="true">JGZ</span>
+                <span class="brand-name">Jesús García</span>
+            </a>
+            <nav class="main-nav" id="primary-navigation" aria-label="Navegación principal">
                 <ul>
                     <li><a href="index.html">INICIO</a></li>
                     <li><a href="obras.html">MIS OBRAS</a></li>
                     <li><a href="conferencias.html">CONFERENCIAS</a></li>
                     <li><a href="historia.html">MI HISTORIA</a></li>
                     <li><a href="tienda.html">TIENDA</a></li>
-                    <li><a href="contacto.html" class="active">CONTACTO</a></li>
+                    <li><a href="contacto.html" class="active" aria-current="page">CONTACTO</a></li>
                 </ul>
             </nav>
+            <button class="mobile-menu-btn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="primary-navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
     </header>
 
@@ -51,11 +71,11 @@
                 </div>
 
                 <div class="contact-social">
-                    <h3 class="subsection-title">Sígueme</h3>
+                    <h2 class="subsection-title">Sígueme</h2>
                     <div class="social-icons" style="margin-top: 1rem;">
-                        <a href="https://www.instagram.com/jesusgarciazapata?utm_source=qr" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.tiktok.com/@jesusgarciazapata" aria-label="TikTok" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-                        <a href="https://youtube.com/@jesusgarcia-x9h7f?si=NAqWkVvbL25dSlB5" aria-label="YouTube" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/jesusgarciazapata?utm_source=qr" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@jesusgarciazapata" aria-label="TikTok" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://youtube.com/@jesusgarcia-x9h7f?si=NAqWkVvbL25dSlB5" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
                     </div>
                 </div>
             </div>
@@ -154,6 +174,6 @@
             });
         });
     </script>
-    <script src="mobile-menu.js"></script>
+    <script src="mobile-menu.js" defer></script>
 </body>
 </html>

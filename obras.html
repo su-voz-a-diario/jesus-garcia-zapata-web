@@ -5,26 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mis Obras | Jesús García Zapata</title>
     <meta name="description" content="Galería de obras de Jesús García Zapata. Pinturas que cuentan historias, despiertan emociones y dejan huella en el alma.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="canonical" href="https://jesusgarciapintor.com/obras.html">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/playfair-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/playfair-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mis Obras | Jesús García Zapata">
+    <meta property="og:description" content="Galería de obras de Jesús García Zapata. Pinturas que cuentan historias, despiertan emociones y dejan huella en el alma.">
+    <meta property="og:url" content="https://jesusgarciapintor.com/obras.html">
+    <meta property="og:image" content="https://jesusgarciapintor.com/assets/images/obras/obra-jesus-garcia-zapata-11.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mis Obras | Jesús García Zapata">
+    <meta name="twitter:description" content="Galería de obras de Jesús García Zapata. Pinturas que cuentan historias, despiertan emociones y dejan huella en el alma.">
+    <meta name="twitter:image" content="https://jesusgarciapintor.com/assets/images/obras/obra-jesus-garcia-zapata-11.webp">
+    <link rel="stylesheet" href="styles.min.css">
 </head>
 <body class="inner-page">
     <header class="site-header">
         <div class="header-container">
-            <div class="logo"><a href="index.html">JGZ</a></div>
-            <nav class="main-nav">
+            <a class="brand" href="index.html" aria-label="JGZ Jesús García - Inicio">
+                <span class="logo" aria-hidden="true">JGZ</span>
+                <span class="brand-name">Jesús García</span>
+            </a>
+            <nav class="main-nav" id="primary-navigation" aria-label="Navegación principal">
                 <ul>
                     <li><a href="index.html">INICIO</a></li>
-                    <li><a href="obras.html" class="active">MIS OBRAS</a></li>
+                    <li><a href="obras.html" class="active" aria-current="page">MIS OBRAS</a></li>
                     <li><a href="conferencias.html">CONFERENCIAS</a></li>
                     <li><a href="historia.html">MI HISTORIA</a></li>
                     <li><a href="tienda.html">TIENDA</a></li>
                     <li><a href="contacto.html">CONTACTO</a></li>
                 </ul>
             </nav>
+            <button class="mobile-menu-btn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="primary-navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
     </header>
 
@@ -46,13 +63,13 @@
             <div class="gallery-grid" id="gallery-grid">
                 <div class="gallery-item" data-category="adquisicion">
                     <div class="gallery-img-container">
-                        <img src="assets/images/obras/obra-jesus-garcia-zapata-01.webp" loading="lazy" alt="Obra Original 1">
+                        <img src="assets/images/obras/obra-jesus-garcia-zapata-01.webp" loading="eager" fetchpriority="high" alt="Obra Original 1" width="589" height="707">
                         <div class="gallery-hover">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-info">
-                        <h3 class="gallery-item-title">Obra Original #01</h3>
+                        <h2 class="gallery-item-title">Obra Original #01</h2>
                         <p class="gallery-item-meta">Técnica mixta</p>
                         <span class="status-badge status-available" style="margin-bottom: 0.5rem; display: inline-block;">Disponible</span>
                         <a href="tienda.html" class="btn btn-card" style="font-size: 0.8rem; padding: 0.4rem 0.8rem; margin-top: 0.5rem; display: block;">Adquirir Obra</a>
@@ -60,13 +77,13 @@
                 </div>
                 <div class="gallery-item" data-category="adquisicion">
                     <div class="gallery-img-container">
-                        <img src="assets/images/obras/obra-jesus-garcia-zapata-02.webp" loading="lazy" alt="Obra Original 2">
+                        <img src="assets/images/obras/obra-jesus-garcia-zapata-02.webp" loading="lazy" alt="Obra Original 2" width="720" height="1280">
                         <div class="gallery-hover">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-info">
-                        <h3 class="gallery-item-title">Obra Original #02</h3>
+                        <h2 class="gallery-item-title">Obra Original #02</h2>
                         <p class="gallery-item-meta">Técnica mixta</p>
                         <span class="status-badge status-available" style="margin-bottom: 0.5rem; display: inline-block;">Disponible</span>
                         <a href="tienda.html" class="btn btn-card" style="font-size: 0.8rem; padding: 0.4rem 0.8rem; margin-top: 0.5rem; display: block;">Adquirir Obra</a>
@@ -74,13 +91,13 @@
                 </div>
                 <div class="gallery-item" data-category="adquisicion">
                     <div class="gallery-img-container">
-                        <img src="assets/images/obras/obra-jesus-garcia-zapata-03.webp" loading="lazy" alt="Obra Original 3">
+                        <img src="assets/images/obras/obra-jesus-garcia-zapata-03.webp" loading="lazy" alt="Obra Original 3" width="1017" height="1280">
                         <div class="gallery-hover">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-info">
-                        <h3 class="gallery-item-title">Obra Original #03</h3>
+                        <h2 class="gallery-item-title">Obra Original #03</h2>
                         <p class="gallery-item-meta">Técnica mixta</p>
                         <span class="status-badge status-available" style="margin-bottom: 0.5rem; display: inline-block;">Disponible</span>
                         <a href="tienda.html" class="btn btn-card" style="font-size: 0.8rem; padding: 0.4rem 0.8rem; margin-top: 0.5rem; display: block;">Adquirir Obra</a>
@@ -88,13 +105,13 @@
                 </div>
                 <div class="gallery-item" data-category="adquisicion">
                     <div class="gallery-img-container">
-                        <img src="assets/images/obras/obra-jesus-garcia-zapata-04.webp" loading="lazy" alt="Obra Original 4">
+                        <img src="assets/images/obras/obra-jesus-garcia-zapata-04.webp" loading="lazy" alt="Obra Original 4" width="592" height="1280">
                         <div class="gallery-hover">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-info">
-                        <h3 class="gallery-item-title">Obra Original #04</h3>
+                        <h2 class="gallery-item-title">Obra Original #04</h2>
                         <p class="gallery-item-meta">Técnica mixta</p>
                         <span class="status-badge status-available" style="margin-bottom: 0.5rem; display: inline-block;">Disponible</span>
                         <a href="tienda.html" class="btn btn-card" style="font-size: 0.8rem; padding: 0.4rem 0.8rem; margin-top: 0.5rem; display: block;">Adquirir Obra</a>
@@ -102,13 +119,13 @@
                 </div>
                 <div class="gallery-item" data-category="adquisicion">
                     <div class="gallery-img-container">
-                        <img src="assets/images/obras/obra-jesus-garcia-zapata-05.webp" loading="lazy" alt="Obra Original 5">
+                        <img src="assets/images/obras/obra-jesus-garcia-zapata-05.webp" loading="lazy" alt="Obra Original 5" width="592" height="1280">
                         <div class="gallery-hover">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-info">
-                        <h3 class="gallery-item-title">Obra Original #05</h3>
+                        <h2 class="gallery-item-title">Obra Original #05</h2>
                         <p class="gallery-item-meta">Técnica mixta</p>
                         <span class="status-badge status-available" style="margin-bottom: 0.5rem; display: inline-block;">Disponible</span>
                         <a href="tienda.html" class="btn btn-card" style="font-size: 0.8rem; padding: 0.4rem 0.8rem; margin-top: 0.5rem; display: block;">Adquirir Obra</a>
@@ -116,13 +133,13 @@
                 </div>
                 <div class="gallery-item" data-category="adquisicion">
                     <div class="gallery-img-container">
-                        <img src="assets/images/obras/obra-jesus-garcia-zapata-06.webp" loading="lazy" alt="Obra Original 6">
+                        <img src="assets/images/obras/obra-jesus-garcia-zapata-06.webp" loading="lazy" alt="Obra Original 6" width="720" height="760">
                         <div class="gallery-hover">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-info">
-                        <h3 class="gallery-item-title">Obra Original #06</h3>
+                        <h2 class="gallery-item-title">Obra Original #06</h2>
                         <p class="gallery-item-meta">Técnica mixta</p>
                         <span class="status-badge status-available" style="margin-bottom: 0.5rem; display: inline-block;">Disponible</span>
                         <a href="tienda.html" class="btn btn-card" style="font-size: 0.8rem; padding: 0.4rem 0.8rem; margin-top: 0.5rem; display: block;">Adquirir Obra</a>
@@ -130,13 +147,13 @@
                 </div>
                 <div class="gallery-item" data-category="adquisicion">
                     <div class="gallery-img-container">
-                        <img src="assets/images/obras/obra-jesus-garcia-zapata-07.webp" loading="lazy" alt="Obra Original 7">
+                        <img src="assets/images/obras/obra-jesus-garcia-zapata-07.webp" loading="lazy" alt="Obra Original 7" width="996" height="1280">
                         <div class="gallery-hover">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-info">
-                        <h3 class="gallery-item-title">Obra Original #07</h3>
+                        <h2 class="gallery-item-title">Obra Original #07</h2>
                         <p class="gallery-item-meta">Técnica mixta</p>
                         <span class="status-badge status-available" style="margin-bottom: 0.5rem; display: inline-block;">Disponible</span>
                         <a href="tienda.html" class="btn btn-card" style="font-size: 0.8rem; padding: 0.4rem 0.8rem; margin-top: 0.5rem; display: block;">Adquirir Obra</a>
@@ -144,13 +161,13 @@
                 </div>
                 <div class="gallery-item" data-category="adquisicion">
                     <div class="gallery-img-container">
-                        <img src="assets/images/obras/obra-jesus-garcia-zapata-08.webp" loading="lazy" alt="Obra Original 8">
+                        <img src="assets/images/obras/obra-jesus-garcia-zapata-08.webp" loading="lazy" alt="Obra Original 8" width="960" height="1280">
                         <div class="gallery-hover">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-info">
-                        <h3 class="gallery-item-title">Obra Original #08</h3>
+                        <h2 class="gallery-item-title">Obra Original #08</h2>
                         <p class="gallery-item-meta">Técnica mixta</p>
                         <span class="status-badge status-available" style="margin-bottom: 0.5rem; display: inline-block;">Disponible</span>
                         <a href="tienda.html" class="btn btn-card" style="font-size: 0.8rem; padding: 0.4rem 0.8rem; margin-top: 0.5rem; display: block;">Adquirir Obra</a>
@@ -158,13 +175,13 @@
                 </div>
                 <div class="gallery-item" data-category="adquisicion">
                     <div class="gallery-img-container">
-                        <img src="assets/images/obras/obra-jesus-garcia-zapata-09.webp" loading="lazy" alt="Obra Original 9">
+                        <img src="assets/images/obras/obra-jesus-garcia-zapata-09.webp" loading="lazy" alt="Obra Original 9" width="1024" height="1280">
                         <div class="gallery-hover">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-info">
-                        <h3 class="gallery-item-title">Obra Original #09</h3>
+                        <h2 class="gallery-item-title">Obra Original #09</h2>
                         <p class="gallery-item-meta">Técnica mixta</p>
                         <span class="status-badge status-available" style="margin-bottom: 0.5rem; display: inline-block;">Disponible</span>
                         <a href="tienda.html" class="btn btn-card" style="font-size: 0.8rem; padding: 0.4rem 0.8rem; margin-top: 0.5rem; display: block;">Adquirir Obra</a>
@@ -172,13 +189,13 @@
                 </div>
                 <div class="gallery-item" data-category="adquisicion">
                     <div class="gallery-img-container">
-                        <img src="assets/images/obras/obra-jesus-garcia-zapata-10.webp" loading="lazy" alt="Obra Original 10">
+                        <img src="assets/images/obras/obra-jesus-garcia-zapata-10.webp" loading="lazy" alt="Obra Original 10" width="916" height="1280">
                         <div class="gallery-hover">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-info">
-                        <h3 class="gallery-item-title">Obra Original #10</h3>
+                        <h2 class="gallery-item-title">Obra Original #10</h2>
                         <p class="gallery-item-meta">Técnica mixta</p>
                         <span class="status-badge status-available" style="margin-bottom: 0.5rem; display: inline-block;">Disponible</span>
                         <a href="tienda.html" class="btn btn-card" style="font-size: 0.8rem; padding: 0.4rem 0.8rem; margin-top: 0.5rem; display: block;">Adquirir Obra</a>
@@ -186,13 +203,13 @@
                 </div>
                 <div class="gallery-item" data-category="adquisicion">
                     <div class="gallery-img-container">
-                        <img src="assets/images/obras/obra-jesus-garcia-zapata-11.webp" loading="lazy" alt="Obra Original 11">
+                        <img src="assets/images/obras/obra-jesus-garcia-zapata-11.webp" loading="lazy" alt="Obra Original 11" width="983" height="1280">
                         <div class="gallery-hover">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-info">
-                        <h3 class="gallery-item-title">Obra Original #11</h3>
+                        <h2 class="gallery-item-title">Obra Original #11</h2>
                         <p class="gallery-item-meta">Técnica mixta</p>
                         <span class="status-badge status-available" style="margin-bottom: 0.5rem; display: inline-block;">Disponible</span>
                         <a href="tienda.html" class="btn btn-card" style="font-size: 0.8rem; padding: 0.4rem 0.8rem; margin-top: 0.5rem; display: block;">Adquirir Obra</a>
@@ -200,13 +217,13 @@
                 </div>
                 <div class="gallery-item" data-category="adquisicion">
                     <div class="gallery-img-container">
-                        <img src="assets/images/obras/obra-jesus-garcia-zapata-12.webp" loading="lazy" alt="Obra Original 12">
+                        <img src="assets/images/obras/obra-jesus-garcia-zapata-12.webp" loading="lazy" alt="Obra Original 12" width="658" height="527">
                         <div class="gallery-hover">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-info">
-                        <h3 class="gallery-item-title">Obra Original #12</h3>
+                        <h2 class="gallery-item-title">Obra Original #12</h2>
                         <p class="gallery-item-meta">Técnica mixta</p>
                         <span class="status-badge status-available" style="margin-bottom: 0.5rem; display: inline-block;">Disponible</span>
                         <a href="tienda.html" class="btn btn-card" style="font-size: 0.8rem; padding: 0.4rem 0.8rem; margin-top: 0.5rem; display: block;">Adquirir Obra</a>
@@ -214,13 +231,13 @@
                 </div>
                 <div class="gallery-item" data-category="adquisicion">
                     <div class="gallery-img-container">
-                        <img src="assets/images/obras/obra-jesus-garcia-zapata-13.webp" loading="lazy" alt="Obra Original 13">
+                        <img src="assets/images/obras/obra-jesus-garcia-zapata-13.webp" loading="lazy" alt="Obra Original 13" width="1280" height="622">
                         <div class="gallery-hover">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-info">
-                        <h3 class="gallery-item-title">Obra Original #13</h3>
+                        <h2 class="gallery-item-title">Obra Original #13</h2>
                         <p class="gallery-item-meta">Técnica mixta</p>
                         <span class="status-badge status-available" style="margin-bottom: 0.5rem; display: inline-block;">Disponible</span>
                         <a href="tienda.html" class="btn btn-card" style="font-size: 0.8rem; padding: 0.4rem 0.8rem; margin-top: 0.5rem; display: block;">Adquirir Obra</a>
@@ -228,13 +245,13 @@
                 </div>
                 <div class="gallery-item" data-category="adquisicion">
                     <div class="gallery-img-container">
-                        <img src="assets/images/obras/obra-jesus-garcia-zapata-14.webp" loading="lazy" alt="Obra Original 14">
+                        <img src="assets/images/obras/obra-jesus-garcia-zapata-14.webp" loading="lazy" alt="Obra Original 14" width="592" height="1280">
                         <div class="gallery-hover">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-info">
-                        <h3 class="gallery-item-title">Obra Original #14</h3>
+                        <h2 class="gallery-item-title">Obra Original #14</h2>
                         <p class="gallery-item-meta">Técnica mixta</p>
                         <span class="status-badge status-available" style="margin-bottom: 0.5rem; display: inline-block;">Disponible</span>
                         <a href="tienda.html" class="btn btn-card" style="font-size: 0.8rem; padding: 0.4rem 0.8rem; margin-top: 0.5rem; display: block;">Adquirir Obra</a>
@@ -242,13 +259,13 @@
                 </div>
                 <div class="gallery-item" data-category="adquisicion">
                     <div class="gallery-img-container">
-                        <img src="assets/images/obras/obra-jesus-garcia-zapata-15.webp" loading="lazy" alt="Obra Original 15">
+                        <img src="assets/images/obras/obra-jesus-garcia-zapata-15.webp" loading="lazy" alt="Obra Original 15" width="960" height="1280">
                         <div class="gallery-hover">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-info">
-                        <h3 class="gallery-item-title">Obra Original #15</h3>
+                        <h2 class="gallery-item-title">Obra Original #15</h2>
                         <p class="gallery-item-meta">Técnica mixta</p>
                         <span class="status-badge status-available" style="margin-bottom: 0.5rem; display: inline-block;">Disponible</span>
                         <a href="tienda.html" class="btn btn-card" style="font-size: 0.8rem; padding: 0.4rem 0.8rem; margin-top: 0.5rem; display: block;">Adquirir Obra</a>
@@ -256,299 +273,299 @@
                 </div>
                 <div class="gallery-item" data-category="historico">
                     <div class="gallery-img-container">
-                        <img src="assets/images/obras/historico-01.webp" loading="lazy" alt="Archivo Histórico 1">
+                        <img src="assets/images/obras/historico-01.webp" loading="lazy" alt="Archivo Histórico 1" width="651" height="439">
                         <div class="gallery-hover">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-info">
-                        <h3 class="gallery-item-title">Archivo Histórico #01</h3>
+                        <h2 class="gallery-item-title">Archivo Histórico #01</h2>
                         <p class="gallery-item-meta">Técnica mixta</p>
                         <span class="status-badge" style="background-color: var(--gray-dark); color: var(--gray-light); margin-bottom: 0.5rem; display: inline-block; padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.8rem; font-weight: 500;">Colección Privada</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="historico">
                     <div class="gallery-img-container">
-                        <img src="assets/images/obras/historico-02.webp" loading="lazy" alt="Archivo Histórico 2">
+                        <img src="assets/images/obras/historico-02.webp" loading="lazy" alt="Archivo Histórico 2" width="1607" height="1920">
                         <div class="gallery-hover">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-info">
-                        <h3 class="gallery-item-title">Archivo Histórico #02</h3>
+                        <h2 class="gallery-item-title">Archivo Histórico #02</h2>
                         <p class="gallery-item-meta">Técnica mixta</p>
                         <span class="status-badge" style="background-color: var(--gray-dark); color: var(--gray-light); margin-bottom: 0.5rem; display: inline-block; padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.8rem; font-weight: 500;">Colección Privada</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="historico">
                     <div class="gallery-img-container">
-                        <img src="assets/images/obras/historico-03.webp" loading="lazy" alt="Archivo Histórico 3">
+                        <img src="assets/images/obras/historico-03.webp" loading="lazy" alt="Archivo Histórico 3" width="670" height="933">
                         <div class="gallery-hover">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-info">
-                        <h3 class="gallery-item-title">Archivo Histórico #03</h3>
+                        <h2 class="gallery-item-title">Archivo Histórico #03</h2>
                         <p class="gallery-item-meta">Técnica mixta</p>
                         <span class="status-badge" style="background-color: var(--gray-dark); color: var(--gray-light); margin-bottom: 0.5rem; display: inline-block; padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.8rem; font-weight: 500;">Colección Privada</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="historico">
                     <div class="gallery-img-container">
-                        <img src="assets/images/obras/historico-04.webp" loading="lazy" alt="Archivo Histórico 4">
+                        <img src="assets/images/obras/historico-04.webp" loading="lazy" alt="Archivo Histórico 4" width="617" height="617">
                         <div class="gallery-hover">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-info">
-                        <h3 class="gallery-item-title">Archivo Histórico #04</h3>
+                        <h2 class="gallery-item-title">Archivo Histórico #04</h2>
                         <p class="gallery-item-meta">Técnica mixta</p>
                         <span class="status-badge" style="background-color: var(--gray-dark); color: var(--gray-light); margin-bottom: 0.5rem; display: inline-block; padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.8rem; font-weight: 500;">Colección Privada</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="historico">
                     <div class="gallery-img-container">
-                        <img src="assets/images/obras/historico-05.webp" loading="lazy" alt="Archivo Histórico 5">
+                        <img src="assets/images/obras/historico-05.webp" loading="lazy" alt="Archivo Histórico 5" width="1440" height="1920">
                         <div class="gallery-hover">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-info">
-                        <h3 class="gallery-item-title">Archivo Histórico #05</h3>
+                        <h2 class="gallery-item-title">Archivo Histórico #05</h2>
                         <p class="gallery-item-meta">Técnica mixta</p>
                         <span class="status-badge" style="background-color: var(--gray-dark); color: var(--gray-light); margin-bottom: 0.5rem; display: inline-block; padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.8rem; font-weight: 500;">Colección Privada</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="historico">
                     <div class="gallery-img-container">
-                        <img src="assets/images/obras/historico-06.webp" loading="lazy" alt="Archivo Histórico 6">
+                        <img src="assets/images/obras/historico-06.webp" loading="lazy" alt="Archivo Histórico 6" width="1920" height="1572">
                         <div class="gallery-hover">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-info">
-                        <h3 class="gallery-item-title">Archivo Histórico #06</h3>
+                        <h2 class="gallery-item-title">Archivo Histórico #06</h2>
                         <p class="gallery-item-meta">Técnica mixta</p>
                         <span class="status-badge" style="background-color: var(--gray-dark); color: var(--gray-light); margin-bottom: 0.5rem; display: inline-block; padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.8rem; font-weight: 500;">Colección Privada</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="historico">
                     <div class="gallery-img-container">
-                        <img src="assets/images/obras/historico-07.webp" loading="lazy" alt="Archivo Histórico 7">
+                        <img src="assets/images/obras/historico-07.webp" loading="lazy" alt="Archivo Histórico 7" width="1825" height="1920">
                         <div class="gallery-hover">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-info">
-                        <h3 class="gallery-item-title">Archivo Histórico #07</h3>
+                        <h2 class="gallery-item-title">Archivo Histórico #07</h2>
                         <p class="gallery-item-meta">Técnica mixta</p>
                         <span class="status-badge" style="background-color: var(--gray-dark); color: var(--gray-light); margin-bottom: 0.5rem; display: inline-block; padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.8rem; font-weight: 500;">Colección Privada</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="historico">
                     <div class="gallery-img-container">
-                        <img src="assets/images/obras/historico-08.webp" loading="lazy" alt="Archivo Histórico 8">
+                        <img src="assets/images/obras/historico-08.webp" loading="lazy" alt="Archivo Histórico 8" width="901" height="1600">
                         <div class="gallery-hover">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-info">
-                        <h3 class="gallery-item-title">Archivo Histórico #08</h3>
+                        <h2 class="gallery-item-title">Archivo Histórico #08</h2>
                         <p class="gallery-item-meta">Técnica mixta</p>
                         <span class="status-badge" style="background-color: var(--gray-dark); color: var(--gray-light); margin-bottom: 0.5rem; display: inline-block; padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.8rem; font-weight: 500;">Colección Privada</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="historico">
                     <div class="gallery-img-container">
-                        <img src="assets/images/obras/historico-09.webp" loading="lazy" alt="Archivo Histórico 9">
+                        <img src="assets/images/obras/historico-09.webp" loading="lazy" alt="Archivo Histórico 9" width="901" height="787">
                         <div class="gallery-hover">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-info">
-                        <h3 class="gallery-item-title">Archivo Histórico #09</h3>
+                        <h2 class="gallery-item-title">Archivo Histórico #09</h2>
                         <p class="gallery-item-meta">Técnica mixta</p>
                         <span class="status-badge" style="background-color: var(--gray-dark); color: var(--gray-light); margin-bottom: 0.5rem; display: inline-block; padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.8rem; font-weight: 500;">Colección Privada</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="historico">
                     <div class="gallery-img-container">
-                        <img src="assets/images/obras/historico-10.webp" loading="lazy" alt="Archivo Histórico 10">
+                        <img src="assets/images/obras/historico-10.webp" loading="lazy" alt="Archivo Histórico 10" width="1440" height="1920">
                         <div class="gallery-hover">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-info">
-                        <h3 class="gallery-item-title">Archivo Histórico #10</h3>
+                        <h2 class="gallery-item-title">Archivo Histórico #10</h2>
                         <p class="gallery-item-meta">Técnica mixta</p>
                         <span class="status-badge" style="background-color: var(--gray-dark); color: var(--gray-light); margin-bottom: 0.5rem; display: inline-block; padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.8rem; font-weight: 500;">Colección Privada</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="historico">
                     <div class="gallery-img-container">
-                        <img src="assets/images/obras/historico-11.webp" loading="lazy" alt="Archivo Histórico 11">
+                        <img src="assets/images/obras/historico-11.webp" loading="lazy" alt="Archivo Histórico 11" width="1549" height="1920">
                         <div class="gallery-hover">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-info">
-                        <h3 class="gallery-item-title">Archivo Histórico #11</h3>
+                        <h2 class="gallery-item-title">Archivo Histórico #11</h2>
                         <p class="gallery-item-meta">Técnica mixta</p>
                         <span class="status-badge" style="background-color: var(--gray-dark); color: var(--gray-light); margin-bottom: 0.5rem; display: inline-block; padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.8rem; font-weight: 500;">Colección Privada</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="historico">
                     <div class="gallery-img-container">
-                        <img src="assets/images/obras/historico-12.webp" loading="lazy" alt="Archivo Histórico 12">
+                        <img src="assets/images/obras/historico-12.webp" loading="lazy" alt="Archivo Histórico 12" width="1440" height="1920">
                         <div class="gallery-hover">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-info">
-                        <h3 class="gallery-item-title">Archivo Histórico #12</h3>
+                        <h2 class="gallery-item-title">Archivo Histórico #12</h2>
                         <p class="gallery-item-meta">Técnica mixta</p>
                         <span class="status-badge" style="background-color: var(--gray-dark); color: var(--gray-light); margin-bottom: 0.5rem; display: inline-block; padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.8rem; font-weight: 500;">Colección Privada</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="historico">
                     <div class="gallery-img-container">
-                        <img src="assets/images/obras/historico-13.webp" loading="lazy" alt="Archivo Histórico 13">
+                        <img src="assets/images/obras/historico-13.webp" loading="lazy" alt="Archivo Histórico 13" width="1920" height="1433">
                         <div class="gallery-hover">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-info">
-                        <h3 class="gallery-item-title">Archivo Histórico #13</h3>
+                        <h2 class="gallery-item-title">Archivo Histórico #13</h2>
                         <p class="gallery-item-meta">Técnica mixta</p>
                         <span class="status-badge" style="background-color: var(--gray-dark); color: var(--gray-light); margin-bottom: 0.5rem; display: inline-block; padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.8rem; font-weight: 500;">Colección Privada</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="historico">
                     <div class="gallery-img-container">
-                        <img src="assets/images/obras/historico-14.webp" loading="lazy" alt="Archivo Histórico 14">
+                        <img src="assets/images/obras/historico-14.webp" loading="lazy" alt="Archivo Histórico 14" width="668" height="1156">
                         <div class="gallery-hover">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-info">
-                        <h3 class="gallery-item-title">Archivo Histórico #14</h3>
+                        <h2 class="gallery-item-title">Archivo Histórico #14</h2>
                         <p class="gallery-item-meta">Técnica mixta</p>
                         <span class="status-badge" style="background-color: var(--gray-dark); color: var(--gray-light); margin-bottom: 0.5rem; display: inline-block; padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.8rem; font-weight: 500;">Colección Privada</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="historico">
                     <div class="gallery-img-container">
-                        <img src="assets/images/obras/historico-15.webp" loading="lazy" alt="Archivo Histórico 15">
+                        <img src="assets/images/obras/historico-15.webp" loading="lazy" alt="Archivo Histórico 15" width="1249" height="1600">
                         <div class="gallery-hover">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-info">
-                        <h3 class="gallery-item-title">Archivo Histórico #15</h3>
+                        <h2 class="gallery-item-title">Archivo Histórico #15</h2>
                         <p class="gallery-item-meta">Técnica mixta</p>
                         <span class="status-badge" style="background-color: var(--gray-dark); color: var(--gray-light); margin-bottom: 0.5rem; display: inline-block; padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.8rem; font-weight: 500;">Colección Privada</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="historico">
                     <div class="gallery-img-container">
-                        <img src="assets/images/obras/historico-16.webp" loading="lazy" alt="Archivo Histórico 16">
+                        <img src="assets/images/obras/historico-16.webp" loading="lazy" alt="Archivo Histórico 16" width="1629" height="1920">
                         <div class="gallery-hover">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-info">
-                        <h3 class="gallery-item-title">Archivo Histórico #16</h3>
+                        <h2 class="gallery-item-title">Archivo Histórico #16</h2>
                         <p class="gallery-item-meta">Técnica mixta</p>
                         <span class="status-badge" style="background-color: var(--gray-dark); color: var(--gray-light); margin-bottom: 0.5rem; display: inline-block; padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.8rem; font-weight: 500;">Colección Privada</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="historico">
                     <div class="gallery-img-container">
-                        <img src="assets/images/obras/historico-17.webp" loading="lazy" alt="Archivo Histórico 17">
+                        <img src="assets/images/obras/historico-17.webp" loading="lazy" alt="Archivo Histórico 17" width="1568" height="1920">
                         <div class="gallery-hover">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-info">
-                        <h3 class="gallery-item-title">Archivo Histórico #17</h3>
+                        <h2 class="gallery-item-title">Archivo Histórico #17</h2>
                         <p class="gallery-item-meta">Técnica mixta</p>
                         <span class="status-badge" style="background-color: var(--gray-dark); color: var(--gray-light); margin-bottom: 0.5rem; display: inline-block; padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.8rem; font-weight: 500;">Colección Privada</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="historico">
                     <div class="gallery-img-container">
-                        <img src="assets/images/obras/historico-18.webp" loading="lazy" alt="Archivo Histórico 18">
+                        <img src="assets/images/obras/historico-18.webp" loading="lazy" alt="Archivo Histórico 18" width="1041" height="1424">
                         <div class="gallery-hover">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-info">
-                        <h3 class="gallery-item-title">Archivo Histórico #18</h3>
+                        <h2 class="gallery-item-title">Archivo Histórico #18</h2>
                         <p class="gallery-item-meta">Técnica mixta</p>
                         <span class="status-badge" style="background-color: var(--gray-dark); color: var(--gray-light); margin-bottom: 0.5rem; display: inline-block; padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.8rem; font-weight: 500;">Colección Privada</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="historico">
                     <div class="gallery-img-container">
-                        <img src="assets/images/obras/historico-19.webp" loading="lazy" alt="Archivo Histórico 19">
+                        <img src="assets/images/obras/historico-19.webp" loading="lazy" alt="Archivo Histórico 19" width="1440" height="1920">
                         <div class="gallery-hover">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-info">
-                        <h3 class="gallery-item-title">Archivo Histórico #19</h3>
+                        <h2 class="gallery-item-title">Archivo Histórico #19</h2>
                         <p class="gallery-item-meta">Técnica mixta</p>
                         <span class="status-badge" style="background-color: var(--gray-dark); color: var(--gray-light); margin-bottom: 0.5rem; display: inline-block; padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.8rem; font-weight: 500;">Colección Privada</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="historico">
                     <div class="gallery-img-container">
-                        <img src="assets/images/obras/historico-20.webp" loading="lazy" alt="Archivo Histórico 20">
+                        <img src="assets/images/obras/historico-20.webp" loading="lazy" alt="Archivo Histórico 20" width="1559" height="1920">
                         <div class="gallery-hover">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-info">
-                        <h3 class="gallery-item-title">Archivo Histórico #20</h3>
+                        <h2 class="gallery-item-title">Archivo Histórico #20</h2>
                         <p class="gallery-item-meta">Técnica mixta</p>
                         <span class="status-badge" style="background-color: var(--gray-dark); color: var(--gray-light); margin-bottom: 0.5rem; display: inline-block; padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.8rem; font-weight: 500;">Colección Privada</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="historico">
                     <div class="gallery-img-container">
-                        <img src="assets/images/obras/historico-21.webp" loading="lazy" alt="Archivo Histórico 21">
+                        <img src="assets/images/obras/historico-21.webp" loading="lazy" alt="Archivo Histórico 21" width="1529" height="1920">
                         <div class="gallery-hover">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-info">
-                        <h3 class="gallery-item-title">Archivo Histórico #21</h3>
+                        <h2 class="gallery-item-title">Archivo Histórico #21</h2>
                         <p class="gallery-item-meta">Técnica mixta</p>
                         <span class="status-badge" style="background-color: var(--gray-dark); color: var(--gray-light); margin-bottom: 0.5rem; display: inline-block; padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.8rem; font-weight: 500;">Colección Privada</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="historico">
                     <div class="gallery-img-container">
-                        <img src="assets/images/obras/historico-22.webp" loading="lazy" alt="Archivo Histórico 22">
+                        <img src="assets/images/obras/historico-22.webp" loading="lazy" alt="Archivo Histórico 22" width="1481" height="1920">
                         <div class="gallery-hover">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-info">
-                        <h3 class="gallery-item-title">Archivo Histórico #22</h3>
+                        <h2 class="gallery-item-title">Archivo Histórico #22</h2>
                         <p class="gallery-item-meta">Técnica mixta</p>
                         <span class="status-badge" style="background-color: var(--gray-dark); color: var(--gray-light); margin-bottom: 0.5rem; display: inline-block; padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.8rem; font-weight: 500;">Colección Privada</span>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="historico">
                     <div class="gallery-img-container">
-                        <img src="assets/images/obras/historico-23.webp" loading="lazy" alt="Archivo Histórico 23">
+                        <img src="assets/images/obras/historico-23.webp" loading="lazy" alt="Archivo Histórico 23" width="1440" height="1920">
                         <div class="gallery-hover">
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
                         </div>
                     </div>
                     <div class="gallery-info">
-                        <h3 class="gallery-item-title">Archivo Histórico #23</h3>
+                        <h2 class="gallery-item-title">Archivo Histórico #23</h2>
                         <p class="gallery-item-meta">Técnica mixta</p>
                         <span class="status-badge" style="background-color: var(--gray-dark); color: var(--gray-light); margin-bottom: 0.5rem; display: inline-block; padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.8rem; font-weight: 500;">Colección Privada</span>
                     </div>
@@ -652,6 +669,6 @@
             });
         });
     </script>
-    <script src="mobile-menu.js"></script>
+    <script src="mobile-menu.js" defer></script>
 </body>
 </html>

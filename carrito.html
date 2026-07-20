@@ -5,9 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adquisición de Obra - Jesús García Zapata</title>
     <meta name="description" content="Adquiere una obra original directamente con el artista Jesús García Zapata. Trato sin intermediarios.">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="canonical" href="https://jesusgarciapintor.com/carrito.html">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/playfair-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Adquisición de Obra - Jesús García Zapata">
+    <meta property="og:description" content="Adquiere una obra original directamente con el artista Jesús García Zapata. Trato sin intermediarios.">
+    <meta property="og:url" content="https://jesusgarciapintor.com/carrito.html">
+    <meta property="og:image" content="https://jesusgarciapintor.com/assets/images/obras/obra-jesus-garcia-zapata-11.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Adquisición de Obra - Jesús García Zapata">
+    <meta name="twitter:description" content="Adquiere una obra original directamente con el artista Jesús García Zapata. Trato sin intermediarios.">
+    <meta name="twitter:image" content="https://jesusgarciapintor.com/assets/images/obras/obra-jesus-garcia-zapata-11.webp">
+    <link rel="stylesheet" href="styles.min.css">
     <style>
         .acquisition-container {
             max-width: 800px;
@@ -44,7 +58,7 @@
             margin: 0 auto;
         }
         .btn-whatsapp {
-            background-color: #25D366;
+            background-color: #0F7A32;
             color: #ffffff;
             border: none;
             padding: 1.2rem;
@@ -58,7 +72,7 @@
             text-decoration: none;
         }
         .btn-whatsapp:hover {
-            background-color: #1EBE5D;
+            background-color: #0B6B2B;
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
             color: #ffffff;
@@ -108,17 +122,23 @@
     <!-- HEADER -->
     <header class="site-header">
         <div class="header-container">
-            <div class="logo"><a href="index.html">JGZ</a></div>
-            <nav class="main-nav" aria-label="Navegación principal">
+            <a class="brand" href="index.html" aria-label="JGZ Jesús García - Inicio">
+                <span class="logo" aria-hidden="true">JGZ</span>
+                <span class="brand-name">Jesús García</span>
+            </a>
+            <nav class="main-nav" id="primary-navigation" aria-label="Navegación principal">
                 <ul>
                     <li><a href="index.html">INICIO</a></li>
                     <li><a href="obras.html">MIS OBRAS</a></li>
                     <li><a href="conferencias.html">CONFERENCIAS</a></li>
                     <li><a href="historia.html">MI HISTORIA</a></li>
-                    <li><a href="tienda.html" class="active">TIENDA</a></li>
+                    <li><a href="tienda.html" class="active" aria-current="page">TIENDA</a></li>
                     <li><a href="contacto.html">CONTACTO</a></li>
                 </ul>
             </nav>
+            <button class="mobile-menu-btn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="primary-navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
     </header>
 
@@ -134,7 +154,7 @@
             </p>
 
             <div class="contact-buttons">
-                <a href="https://wa.me/525531175588?text=Hola%20Jes%C3%BAs,%20me%20interesa%20adquirir%20una%20obra%20original%20de%20tu%20galer%C3%ADa." target="_blank" class="btn-whatsapp">
+                <a href="https://wa.me/525531175588?text=Hola%20Jes%C3%BAs,%20me%20interesa%20adquirir%20una%20obra%20original%20de%20tu%20galer%C3%ADa." target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
                     <i class="fa-brands fa-whatsapp"></i> Contactar por WhatsApp
                 </a>
                 
@@ -162,6 +182,6 @@
             </div>
         </div>
     </footer>
-    <script src="mobile-menu.js"></script>
+    <script src="mobile-menu.js" defer></script>
 </body>
 </html>

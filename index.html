@@ -5,28 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jesús García Zapata | Pintor y Conferencista</title>
     <meta name="description" content="Sitio web oficial de Jesús García Zapata. Pintor con la boca/pie y conferencista internacional. Pinturas que hablan. Palabras que pintan.">
+    <link rel="canonical" href="https://jesusgarciapintor.com/">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/playfair-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/playfair-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Jesús García Zapata | Pintor y Conferencista">
+    <meta property="og:description" content="Sitio web oficial de Jesús García Zapata. Pintor con la boca/pie y conferencista internacional. Pinturas que hablan. Palabras que pintan.">
+    <meta property="og:url" content="https://jesusgarciapintor.com/">
+    <meta property="og:image" content="https://jesusgarciapintor.com/assets/images/obras/obra-jesus-garcia-zapata-11.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jesús García Zapata | Pintor y Conferencista">
+    <meta name="twitter:description" content="Sitio web oficial de Jesús García Zapata. Pintor con la boca/pie y conferencista internacional. Pinturas que hablan. Palabras que pintan.">
+    <meta name="twitter:image" content="https://jesusgarciapintor.com/assets/images/obras/obra-jesus-garcia-zapata-11.webp">
+    <link rel="preload" as="image" href="assets/images/obras/obra-jesus-garcia-zapata-11.webp" fetchpriority="high">
     
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
-    
-    <!-- FontAwesome para iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.min.css">
 </head>
 <body>
 
     <!-- HEADER FIJO -->
     <header class="site-header">
         <div class="header-container">
-            <div class="logo">
-                <a href="#" aria-label="Inicio">JGZ</a>
-            </div>
-            <nav class="main-nav" aria-label="Navegación principal">
+            <a class="brand" href="index.html" aria-label="JGZ Jesús García - Inicio">
+                <span class="logo" aria-hidden="true">JGZ</span>
+                <span class="brand-name">Jesús García</span>
+            </a>
+            <nav class="main-nav" id="primary-navigation" aria-label="Navegación principal">
                 <ul>
-                    <li><a href="index.html" class="active">INICIO</a></li>
+                    <li><a href="index.html" class="active" aria-current="page">INICIO</a></li>
                     <li><a href="obras.html">MIS OBRAS</a></li>
                     <li><a href="conferencias.html">CONFERENCIAS</a></li>
                     <li><a href="historia.html">MI HISTORIA</a></li>
@@ -35,12 +46,12 @@
                 </ul>
             </nav>
             <div class="header-social">
-                <a href="https://www.instagram.com/jesusgarciazapata?utm_source=qr" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.tiktok.com/@jesusgarciazapata" aria-label="TikTok" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-                <a href="https://youtube.com/@jesusgarcia-x9h7f?si=NAqWkVvbL25dSlB5" aria-label="YouTube" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/jesusgarciazapata?utm_source=qr" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@jesusgarciazapata" aria-label="TikTok" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://youtube.com/@jesusgarcia-x9h7f?si=NAqWkVvbL25dSlB5" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
             </div>
             
-            <button class="mobile-menu-btn" aria-label="Abrir menú" aria-expanded="false">
+            <button class="mobile-menu-btn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="primary-navigation">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </div>
@@ -75,21 +86,21 @@
                         <div class="pillar-icon">
                             <i class="fa-solid fa-palette"></i>
                         </div>
-                        <h3 class="pillar-title">PINTOR Y ARTISTA PLÁSTICO</h3>
+                        <h2 class="pillar-title">PINTOR Y ARTISTA PLÁSTICO</h2>
                         <p class="pillar-text">Cada obra cuenta una historia. Cada historia deja una emoción.</p>
                     </div>
                     <div class="pillar-card">
                         <div class="pillar-icon">
                             <i class="fa-solid fa-microphone-lines"></i>
                         </div>
-                        <h3 class="pillar-title">CONFERENCISTA</h3>
+                        <h2 class="pillar-title">CONFERENCISTA</h2>
                         <p class="pillar-text">Historias reales que inspiran y transforman.</p>
                     </div>
                     <div class="pillar-card">
                         <div class="pillar-icon">
                             <i class="fa-regular fa-comment-dots"></i>
                         </div>
-                        <h3 class="pillar-title">PINTURAS QUE HABLAN. PALABRAS QUE PINTAN</h3>
+                        <h2 class="pillar-title">PINTURAS QUE HABLAN. PALABRAS QUE PINTAN</h2>
                         <p class="pillar-text">Arte y palabra, dos lenguajes que llegan al alma.</p>
                     </div>
                 </div>
@@ -153,7 +164,7 @@
                 </div>
                 
                 <div class="footer-col col-links">
-                    <h4 class="footer-heading">ENLACES</h4>
+                    <h3 class="footer-heading">ENLACES</h3>
                     <ul>
                         <li><a href="index.html">Inicio</a></li>
                         <li><a href="obras.html">Mis Obras</a></li>
@@ -165,16 +176,16 @@
                 </div>
                 
                 <div class="footer-col col-social">
-                    <h4 class="footer-heading">SÍGUEME</h4>
+                    <h3 class="footer-heading">SÍGUEME</h3>
                     <div class="social-icons">
-                        <a href="https://www.instagram.com/jesusgarciazapata?utm_source=qr" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.tiktok.com/@jesusgarciazapata" aria-label="TikTok" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-                        <a href="https://youtube.com/@jesusgarcia-x9h7f?si=NAqWkVvbL25dSlB5" aria-label="YouTube" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/jesusgarciazapata?utm_source=qr" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@jesusgarciazapata" aria-label="TikTok" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://youtube.com/@jesusgarcia-x9h7f?si=NAqWkVvbL25dSlB5" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
                     </div>
                 </div>
                 
                 <div class="footer-col col-contact">
-                    <h4 class="footer-heading">CONTACTO</h4>
+                    <h3 class="footer-heading">CONTACTO</h3>
                     <div class="contact-item">
                         <i class="fa-solid fa-envelope"></i>
                         <a href="mailto:Jzapata737@hotmail.com">Jzapata737@hotmail.com</a>
@@ -198,10 +209,10 @@
     </footer>
 
     <!-- Botón flotante WhatsApp -->
-    <a href="https://wa.me/525531175588" class="whatsapp-float" aria-label="Contactar por WhatsApp" target="_blank">
+    <a href="https://wa.me/525531175588" class="whatsapp-float" aria-label="Contactar por WhatsApp" target="_blank" rel="noopener noreferrer">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
-    <script src="mobile-menu.js"></script>
+    <script src="mobile-menu.js" defer></script>
 </body>
 </html>

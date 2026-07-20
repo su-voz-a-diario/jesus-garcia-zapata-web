@@ -4,26 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda Oficial | Jesús García Zapata</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Adquiere obra original de Jesús García Zapata directamente con el artista. Piezas únicas con certificado de autenticidad.">
+    <link rel="canonical" href="https://jesusgarciapintor.com/tienda.html">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/playfair-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/playfair-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Tienda Oficial | Jesús García Zapata">
+    <meta property="og:description" content="Adquiere obra original de Jesús García Zapata directamente con el artista. Piezas únicas con certificado de autenticidad.">
+    <meta property="og:url" content="https://jesusgarciapintor.com/tienda.html">
+    <meta property="og:image" content="https://jesusgarciapintor.com/assets/images/obras/obra-jesus-garcia-zapata-11.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tienda Oficial | Jesús García Zapata">
+    <meta name="twitter:description" content="Adquiere obra original de Jesús García Zapata directamente con el artista. Piezas únicas con certificado de autenticidad.">
+    <meta name="twitter:image" content="https://jesusgarciapintor.com/assets/images/obras/obra-jesus-garcia-zapata-11.webp">
+    <link rel="stylesheet" href="styles.min.css">
 </head>
 <body class="inner-page shop-page">
     <header class="site-header">
         <div class="header-container">
-            <div class="logo"><a href="index.html">JGZ</a></div>
-            <nav class="main-nav">
+            <a class="brand" href="index.html" aria-label="JGZ Jesús García - Inicio">
+                <span class="logo" aria-hidden="true">JGZ</span>
+                <span class="brand-name">Jesús García</span>
+            </a>
+            <nav class="main-nav" id="primary-navigation" aria-label="Navegación principal">
                 <ul>
                     <li><a href="index.html">INICIO</a></li>
                     <li><a href="obras.html">MIS OBRAS</a></li>
                     <li><a href="conferencias.html">CONFERENCIAS</a></li>
                     <li><a href="historia.html">MI HISTORIA</a></li>
-                    <li><a href="tienda.html" class="active">TIENDA</a></li>
+                    <li><a href="tienda.html" class="active" aria-current="page">TIENDA</a></li>
                     <li><a href="contacto.html">CONTACTO</a></li>
                 </ul>
             </nav>
+            <button class="mobile-menu-btn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="primary-navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
     </header>
 
@@ -38,13 +56,13 @@
             <div class="shop-item">
                 <div class="shop-img-container">
                     <span class="unique-badge">Pieza Única</span>
-                    <img src="assets/images/obras/obra-jesus-garcia-zapata-01.webp" loading="lazy" alt="Obra Original 1">
+                    <img src="assets/images/obras/obra-jesus-garcia-zapata-01.webp" loading="eager" fetchpriority="high" alt="Obra Original 1" width="589" height="707">
                     <div class="shop-hover">
                         <a href="carrito.html" class="btn btn-primary" style="width: 100%; display: block; text-align: center;">Adquirir Obra</a>
                     </div>
                 </div>
                 <div class="shop-info">
-                    <h3 class="shop-item-title">Obra Original #01</h3>
+                    <h2 class="shop-item-title">Obra Original #01</h2>
                     <p class="shop-item-desc">Pintura original con certificado de autenticidad.</p>
                     <p class="shop-item-price">$15,000 MXN</p>
                 </div>
@@ -52,13 +70,13 @@
             <div class="shop-item">
                 <div class="shop-img-container">
                     <span class="unique-badge">Pieza Única</span>
-                    <img src="assets/images/obras/obra-jesus-garcia-zapata-02.webp" loading="lazy" alt="Obra Original 2">
+                    <img src="assets/images/obras/obra-jesus-garcia-zapata-02.webp" loading="lazy" alt="Obra Original 2" width="720" height="1280">
                     <div class="shop-hover">
                         <a href="carrito.html" class="btn btn-primary" style="width: 100%; display: block; text-align: center;">Adquirir Obra</a>
                     </div>
                 </div>
                 <div class="shop-info">
-                    <h3 class="shop-item-title">Obra Original #02</h3>
+                    <h2 class="shop-item-title">Obra Original #02</h2>
                     <p class="shop-item-desc">Pintura original con certificado de autenticidad.</p>
                     <p class="shop-item-price">$15,000 MXN</p>
                 </div>
@@ -66,13 +84,13 @@
             <div class="shop-item">
                 <div class="shop-img-container">
                     <span class="unique-badge">Pieza Única</span>
-                    <img src="assets/images/obras/obra-jesus-garcia-zapata-03.webp" loading="lazy" alt="Obra Original 3">
+                    <img src="assets/images/obras/obra-jesus-garcia-zapata-03.webp" loading="lazy" alt="Obra Original 3" width="1017" height="1280">
                     <div class="shop-hover">
                         <a href="carrito.html" class="btn btn-primary" style="width: 100%; display: block; text-align: center;">Adquirir Obra</a>
                     </div>
                 </div>
                 <div class="shop-info">
-                    <h3 class="shop-item-title">Obra Original #03</h3>
+                    <h2 class="shop-item-title">Obra Original #03</h2>
                     <p class="shop-item-desc">Pintura original con certificado de autenticidad.</p>
                     <p class="shop-item-price">$15,000 MXN</p>
                 </div>
@@ -80,13 +98,13 @@
             <div class="shop-item">
                 <div class="shop-img-container">
                     <span class="unique-badge">Pieza Única</span>
-                    <img src="assets/images/obras/obra-jesus-garcia-zapata-04.webp" loading="lazy" alt="Obra Original 4">
+                    <img src="assets/images/obras/obra-jesus-garcia-zapata-04.webp" loading="lazy" alt="Obra Original 4" width="592" height="1280">
                     <div class="shop-hover">
                         <a href="carrito.html" class="btn btn-primary" style="width: 100%; display: block; text-align: center;">Adquirir Obra</a>
                     </div>
                 </div>
                 <div class="shop-info">
-                    <h3 class="shop-item-title">Obra Original #04</h3>
+                    <h2 class="shop-item-title">Obra Original #04</h2>
                     <p class="shop-item-desc">Pintura original con certificado de autenticidad.</p>
                     <p class="shop-item-price">$15,000 MXN</p>
                 </div>
@@ -94,13 +112,13 @@
             <div class="shop-item">
                 <div class="shop-img-container">
                     <span class="unique-badge">Pieza Única</span>
-                    <img src="assets/images/obras/obra-jesus-garcia-zapata-05.webp" loading="lazy" alt="Obra Original 5">
+                    <img src="assets/images/obras/obra-jesus-garcia-zapata-05.webp" loading="lazy" alt="Obra Original 5" width="592" height="1280">
                     <div class="shop-hover">
                         <a href="carrito.html" class="btn btn-primary" style="width: 100%; display: block; text-align: center;">Adquirir Obra</a>
                     </div>
                 </div>
                 <div class="shop-info">
-                    <h3 class="shop-item-title">Obra Original #05</h3>
+                    <h2 class="shop-item-title">Obra Original #05</h2>
                     <p class="shop-item-desc">Pintura original con certificado de autenticidad.</p>
                     <p class="shop-item-price">$15,000 MXN</p>
                 </div>
@@ -108,13 +126,13 @@
             <div class="shop-item">
                 <div class="shop-img-container">
                     <span class="unique-badge">Pieza Única</span>
-                    <img src="assets/images/obras/obra-jesus-garcia-zapata-06.webp" loading="lazy" alt="Obra Original 6">
+                    <img src="assets/images/obras/obra-jesus-garcia-zapata-06.webp" loading="lazy" alt="Obra Original 6" width="720" height="760">
                     <div class="shop-hover">
                         <a href="carrito.html" class="btn btn-primary" style="width: 100%; display: block; text-align: center;">Adquirir Obra</a>
                     </div>
                 </div>
                 <div class="shop-info">
-                    <h3 class="shop-item-title">Obra Original #06</h3>
+                    <h2 class="shop-item-title">Obra Original #06</h2>
                     <p class="shop-item-desc">Pintura original con certificado de autenticidad.</p>
                     <p class="shop-item-price">$15,000 MXN</p>
                 </div>
@@ -122,13 +140,13 @@
             <div class="shop-item">
                 <div class="shop-img-container">
                     <span class="unique-badge">Pieza Única</span>
-                    <img src="assets/images/obras/obra-jesus-garcia-zapata-07.webp" loading="lazy" alt="Obra Original 7">
+                    <img src="assets/images/obras/obra-jesus-garcia-zapata-07.webp" loading="lazy" alt="Obra Original 7" width="996" height="1280">
                     <div class="shop-hover">
                         <a href="carrito.html" class="btn btn-primary" style="width: 100%; display: block; text-align: center;">Adquirir Obra</a>
                     </div>
                 </div>
                 <div class="shop-info">
-                    <h3 class="shop-item-title">Obra Original #07</h3>
+                    <h2 class="shop-item-title">Obra Original #07</h2>
                     <p class="shop-item-desc">Pintura original con certificado de autenticidad.</p>
                     <p class="shop-item-price">$15,000 MXN</p>
                 </div>
@@ -136,13 +154,13 @@
             <div class="shop-item">
                 <div class="shop-img-container">
                     <span class="unique-badge">Pieza Única</span>
-                    <img src="assets/images/obras/obra-jesus-garcia-zapata-08.webp" loading="lazy" alt="Obra Original 8">
+                    <img src="assets/images/obras/obra-jesus-garcia-zapata-08.webp" loading="lazy" alt="Obra Original 8" width="960" height="1280">
                     <div class="shop-hover">
                         <a href="carrito.html" class="btn btn-primary" style="width: 100%; display: block; text-align: center;">Adquirir Obra</a>
                     </div>
                 </div>
                 <div class="shop-info">
-                    <h3 class="shop-item-title">Obra Original #08</h3>
+                    <h2 class="shop-item-title">Obra Original #08</h2>
                     <p class="shop-item-desc">Pintura original con certificado de autenticidad.</p>
                     <p class="shop-item-price">$15,000 MXN</p>
                 </div>
@@ -150,13 +168,13 @@
             <div class="shop-item">
                 <div class="shop-img-container">
                     <span class="unique-badge">Pieza Única</span>
-                    <img src="assets/images/obras/obra-jesus-garcia-zapata-09.webp" loading="lazy" alt="Obra Original 9">
+                    <img src="assets/images/obras/obra-jesus-garcia-zapata-09.webp" loading="lazy" alt="Obra Original 9" width="1024" height="1280">
                     <div class="shop-hover">
                         <a href="carrito.html" class="btn btn-primary" style="width: 100%; display: block; text-align: center;">Adquirir Obra</a>
                     </div>
                 </div>
                 <div class="shop-info">
-                    <h3 class="shop-item-title">Obra Original #09</h3>
+                    <h2 class="shop-item-title">Obra Original #09</h2>
                     <p class="shop-item-desc">Pintura original con certificado de autenticidad.</p>
                     <p class="shop-item-price">$15,000 MXN</p>
                 </div>
@@ -164,13 +182,13 @@
             <div class="shop-item">
                 <div class="shop-img-container">
                     <span class="unique-badge">Pieza Única</span>
-                    <img src="assets/images/obras/obra-jesus-garcia-zapata-10.webp" loading="lazy" alt="Obra Original 10">
+                    <img src="assets/images/obras/obra-jesus-garcia-zapata-10.webp" loading="lazy" alt="Obra Original 10" width="916" height="1280">
                     <div class="shop-hover">
                         <a href="carrito.html" class="btn btn-primary" style="width: 100%; display: block; text-align: center;">Adquirir Obra</a>
                     </div>
                 </div>
                 <div class="shop-info">
-                    <h3 class="shop-item-title">Obra Original #10</h3>
+                    <h2 class="shop-item-title">Obra Original #10</h2>
                     <p class="shop-item-desc">Pintura original con certificado de autenticidad.</p>
                     <p class="shop-item-price">$15,000 MXN</p>
                 </div>
@@ -178,13 +196,13 @@
             <div class="shop-item">
                 <div class="shop-img-container">
                     <span class="unique-badge">Pieza Única</span>
-                    <img src="assets/images/obras/obra-jesus-garcia-zapata-11.webp" loading="lazy" alt="Obra Original 11">
+                    <img src="assets/images/obras/obra-jesus-garcia-zapata-11.webp" loading="lazy" alt="Obra Original 11" width="983" height="1280">
                     <div class="shop-hover">
                         <a href="carrito.html" class="btn btn-primary" style="width: 100%; display: block; text-align: center;">Adquirir Obra</a>
                     </div>
                 </div>
                 <div class="shop-info">
-                    <h3 class="shop-item-title">Obra Original #11</h3>
+                    <h2 class="shop-item-title">Obra Original #11</h2>
                     <p class="shop-item-desc">Pintura original con certificado de autenticidad.</p>
                     <p class="shop-item-price">$15,000 MXN</p>
                 </div>
@@ -192,13 +210,13 @@
             <div class="shop-item">
                 <div class="shop-img-container">
                     <span class="unique-badge">Pieza Única</span>
-                    <img src="assets/images/obras/obra-jesus-garcia-zapata-12.webp" loading="lazy" alt="Obra Original 12">
+                    <img src="assets/images/obras/obra-jesus-garcia-zapata-12.webp" loading="lazy" alt="Obra Original 12" width="658" height="527">
                     <div class="shop-hover">
                         <a href="carrito.html" class="btn btn-primary" style="width: 100%; display: block; text-align: center;">Adquirir Obra</a>
                     </div>
                 </div>
                 <div class="shop-info">
-                    <h3 class="shop-item-title">Obra Original #12</h3>
+                    <h2 class="shop-item-title">Obra Original #12</h2>
                     <p class="shop-item-desc">Pintura original con certificado de autenticidad.</p>
                     <p class="shop-item-price">$15,000 MXN</p>
                 </div>
@@ -206,13 +224,13 @@
             <div class="shop-item">
                 <div class="shop-img-container">
                     <span class="unique-badge">Pieza Única</span>
-                    <img src="assets/images/obras/obra-jesus-garcia-zapata-13.webp" loading="lazy" alt="Obra Original 13">
+                    <img src="assets/images/obras/obra-jesus-garcia-zapata-13.webp" loading="lazy" alt="Obra Original 13" width="1280" height="622">
                     <div class="shop-hover">
                         <a href="carrito.html" class="btn btn-primary" style="width: 100%; display: block; text-align: center;">Adquirir Obra</a>
                     </div>
                 </div>
                 <div class="shop-info">
-                    <h3 class="shop-item-title">Obra Original #13</h3>
+                    <h2 class="shop-item-title">Obra Original #13</h2>
                     <p class="shop-item-desc">Pintura original con certificado de autenticidad.</p>
                     <p class="shop-item-price">$15,000 MXN</p>
                 </div>
@@ -220,13 +238,13 @@
             <div class="shop-item">
                 <div class="shop-img-container">
                     <span class="unique-badge">Pieza Única</span>
-                    <img src="assets/images/obras/obra-jesus-garcia-zapata-14.webp" loading="lazy" alt="Obra Original 14">
+                    <img src="assets/images/obras/obra-jesus-garcia-zapata-14.webp" loading="lazy" alt="Obra Original 14" width="592" height="1280">
                     <div class="shop-hover">
                         <a href="carrito.html" class="btn btn-primary" style="width: 100%; display: block; text-align: center;">Adquirir Obra</a>
                     </div>
                 </div>
                 <div class="shop-info">
-                    <h3 class="shop-item-title">Obra Original #14</h3>
+                    <h2 class="shop-item-title">Obra Original #14</h2>
                     <p class="shop-item-desc">Pintura original con certificado de autenticidad.</p>
                     <p class="shop-item-price">$15,000 MXN</p>
                 </div>
@@ -234,13 +252,13 @@
             <div class="shop-item">
                 <div class="shop-img-container">
                     <span class="unique-badge">Pieza Única</span>
-                    <img src="assets/images/obras/obra-jesus-garcia-zapata-15.webp" loading="lazy" alt="Obra Original 15">
+                    <img src="assets/images/obras/obra-jesus-garcia-zapata-15.webp" loading="lazy" alt="Obra Original 15" width="960" height="1280">
                     <div class="shop-hover">
                         <a href="carrito.html" class="btn btn-primary" style="width: 100%; display: block; text-align: center;">Adquirir Obra</a>
                     </div>
                 </div>
                 <div class="shop-info">
-                    <h3 class="shop-item-title">Obra Original #15</h3>
+                    <h2 class="shop-item-title">Obra Original #15</h2>
                     <p class="shop-item-desc">Pintura original con certificado de autenticidad.</p>
                     <p class="shop-item-price">$15,000 MXN</p>
                 </div>
@@ -248,6 +266,6 @@
         </div>
         </div>
     </main>
-    <script src="mobile-menu.js"></script>
+    <script src="mobile-menu.js" defer></script>
 </body>
 </html>
